@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header/header :: header">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<div>Hello World!</div>
+
+<body class="p-3 mb-2 bg-dark text-white">
+    <div class="d-flex justify-content-center">
+        <main class="px-3">
+            <h3>영화를 기록하고 공유하세요! 😎 </h3>
+        </main>
+    </div>
 </body>
 </html>
