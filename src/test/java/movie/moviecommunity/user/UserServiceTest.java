@@ -29,7 +29,7 @@ public class UserServiceTest {
         user.setNickname("hi3");
         user.setPassword("ede");
         LocalDateTime d = LocalDateTime.parse("2021-07-15 23:59:59", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        user.setReg_date(d);
+        //user.setReg_date(d);
 
         int regId = userService.register(user);
         Assertions.assertEquals(user, userRepository.findUser(regId));
@@ -43,12 +43,12 @@ public class UserServiceTest {
         user1.setNickname("hi3");
         user1.setPassword("ede");
         LocalDateTime d = LocalDateTime.parse("2021-07-15 23:59:59", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        user1.setReg_date(d);
+        //user1.setReg_date(d);
 
         user2.setNickname("hi3");
         user2.setPassword("ede");
         LocalDateTime d1 = LocalDateTime.parse("2021-07-15 23:59:59", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        user2.setReg_date(d1);
+        //user2.setReg_date(d1);
 
         userService.register(user1);
         userService.register(user2);

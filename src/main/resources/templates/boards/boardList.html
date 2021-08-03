@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header/header :: header">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white">
+<div class="container row" style="float: none; margin:100 auto;">
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr bgcolor="gray">
+                <th>글 번호</th>
+                <th>제목</th>
+                <th>내용</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="board : ${boards}" bgcolor="AAAAAA">
+                <td th:text="${board.id}"></td>
+                <td th:text="${board.title}"></td>
+                <td th:text="${board.content}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
